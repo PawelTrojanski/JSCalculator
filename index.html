@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Calculator - FCC</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="calculator">
+
+	<div class="row">
+		<input id="equation" addChar="text" readonly>
+	</div>
+
+	<div class="row">
+		<button class="half-width dark" onclick="clearEquation()">AC</button><button class="half-width dark" onclick="removeLastChar()">CE</button>
+	</div>
+
+	<div class="row">
+		<button onclick="typeChar('7')">7</button><button onclick="typeChar('8')">8</button><button onclick="typeChar('9')">9</button><button class="primary" onclick="typeChar('/')">/</button>
+	</div>
+
+	<div class="row">
+		<button onclick="typeChar('4')">4</button><button onclick="typeChar('5')">5</button><button onclick="typeChar('6')">6</button><button class="primary" onclick="typeChar('*')">*</button>
+	</div>
+
+	<div class="row">
+		<button onclick="typeChar('1')">1</button><button onclick="typeChar('2')">2</button><button onclick="typeChar('3')">3</button><button class="primary" onclick="typeChar('-')">-</button>
+	</div>
+
+	<div class="row">
+		<button onclick="typeChar('.')">.</button><button onclick="typeChar('0')">0</button><button onclick="getResult()">=</button><button class="primary" onclick="typeChar('+')">+</button>
+	</div>
+
+</div>
+
+<div id="footer">
+	made by Paweł Trojański
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
